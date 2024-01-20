@@ -4,6 +4,7 @@
 
 Welcome to the Article Website project! This platform allows users to share articles accompanied by images after completing the registration process.
 Additionally, users can engage by leaving comments on the articles.
+The theme used from hollow knight game is to give spirit and it is made in this way to be fun for myself.
 
 ## License
 

@@ -13,6 +13,12 @@ This project is distributed under the terms of the MIT License. For full details
 
 All images utilized on this platform have been sourced from various free photo sites, and each image retains its original owner's rights under their respective licenses.
 
+## Screen shots
+![Desktop Screenshot 2024 01 20 - 13 53 12 07](https://github.com/KaladinAsA/full-web/assets/143271029/09b83e13-b8c5-412b-b50e-80bb62010f6f)
+
+![Desktop Screenshot 2024 01 20 - 13 44 56 14](https://github.com/KaladinAsA/full-web/assets/143271029/21f79e82-1094-4423-8741-736e01225514)
+
+
 ## Purpose
 
 The primary purpose of this website is to serve as a personal training ground, enabling the testing and refinement of coding skills.

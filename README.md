@@ -7,7 +7,7 @@ Additionally, users can engage by leaving comments on the articles.
 
 ## License
 
-This project is distributed under the terms of the MIT License. For full details, please refer to the [LICENSE](LICENSE) file.
+This project is distributed under the terms of the MIT License. For full details, please refer to the (https://opensource.org/licenses/MIT).
 
 ## Image Attribution
 

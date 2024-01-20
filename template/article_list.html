@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}articles{% endblock title %}
+
+{% block content %}
+<!--bacground image-->
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/images/h6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    background-color: rgb(29, 34, 57);
+    }
+</style>
+<!--nav gap-->
+<style>
+    body {
+      padding-top: 120px;
+    }
+  </style>
+
+<h2>Articles List</h2>
+
+{% for article in article_list %}
+    <div class="container m-2 d-flex justify-content-center">
+        <div class="card bg-dark " style="width: 500px; height: 500px;">
+            <div class="card-header">
+                <h5 class="card-title">
+                    <a href="{% url 'article_detail' article.pk %}">{{article.title}}</a>
+                </h5>   
+                
+                {% if article.image %}
+                    <img src="{{article.image.url}}" class="card-img-top" alt="article image" width="250" height="250">
+                {% else %}
+                    <img src="{% static 'images/h10.jpg' %}" class="card-img-top" alt="article image" width="250" height="250">
+                {% endif %}  
+            </div>
+            <div class="card-body">
+                
+                <p class="card-text">{{article.body|truncatechars:100}}</p>
+            </div>
+            <div class="card-footer">
+                <p class="text-muted">{{article.date}}</p>
+            </div>
+        </div>        
+    </div>
+
+{% endfor %}
+{% endblock content %}

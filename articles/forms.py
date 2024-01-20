@@ -8,6 +8,7 @@ class CommentForm(forms.ModelForm):
         
         
     def save(self, commit=True, author=None, article=None):
+        # setting author of comment to current user befor posting it
         comment = super().save(commit=False)
         comment.author = author
         comment.article = article

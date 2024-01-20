@@ -5,6 +5,7 @@ from .forms import CustomUserCreation,CustomUserChange
 from .models import CustomUser
 
 class CustomAdmin(UserAdmin):
+    """just a quick test on admin site"""
     add_form = CustomUserCreation
     form = CustomUserChange
     model = CustomUser

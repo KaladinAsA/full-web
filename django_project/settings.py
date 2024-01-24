@@ -95,8 +95,8 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 
 DATABASE_URL = os.environ.get("DATABASE_URL_AUTH")
 
-if isinstance(DATABASE_URL, bytes):
-    DATABASE_URL = DATABASE_URL.decode('utf-8')
+print(f"Type of DATABASE_URL: {type(DATABASE_URL)}")
+
 
 DATABASES = {
     'default': dj_database_url.parse(DATABASE_URL)

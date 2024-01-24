@@ -26,13 +26,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-nmh5_yf%-_oroni89gs8516*!lu35&m5zos^_!)zd&8!-t=kjt'
+SECRET_KEY = os.environ.get('SECRET_KEY_NAME')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get('DEBUG_SWITCH')
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ["full_web18.onrender.com"]
 
 # Application definition
 
@@ -93,8 +92,7 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 #     }
 # }
 
-DATABASE_URL = "postgres://full_web18_user:0TDklNSN17IGQgjrIp3Kx8ZCKBw0PiNV@dpg-cmmin88cmk4c73e2hcb0-a.oregon-postgres.render.com/full_web18"
-print(f"DATABSE_URL: {DATABASE_URL}")
+DATABASE_URL = os.environ.get("DATABASE_URL_AUTH")
 
 if isinstance(DATABASE_URL, bytes):
     DATABASE_URL = DATABASE_URL.decode('utf-8')
@@ -138,7 +136,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -167,4 +166,4 @@ EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD')
 
 # image
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_ROOT = os.path.join(BASE_DIR / "media")

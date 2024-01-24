@@ -93,9 +93,7 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 #     }
 # }
 
-DATABASE_URL = "postgres://full_web18_user:0TDklNSN17IGQgjrIp3Kx8ZCKBw0PiNV@dpg-cmmin88cmk4c73e2hcb0-a.oregon-postgres.render.com/full_web18"
-print(f"DATABSE_URL: {DATABASE_URL}")
-
+DATABASE_URL = "Urlpath"
 if isinstance(DATABASE_URL, bytes):
     DATABASE_URL = DATABASE_URL.decode('utf-8')
 

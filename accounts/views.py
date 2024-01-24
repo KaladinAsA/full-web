@@ -22,6 +22,9 @@ class ProfileUpdateView(UpdateView):
         return self.request.user
     
     def form_valid(self, form):
-        # adding picture to pictures
-        form.instance.picture = self.request.FILES.get('picture')
+        # updating user picture
+        picture = self.request.FILES.get('picture')
+        # only update the picture if a new one is provided
+        if picture:
+            form.instance.picture = self.request.FILES.get('picture')
         return super().form_valid(form)

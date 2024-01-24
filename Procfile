@@ -1,1 +1,1 @@
-web: gunicorn just_do_it.wsgi:application
+web: gunicorn "\"just do it\".wsgi:application"

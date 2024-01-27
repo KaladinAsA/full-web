@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY_NAME')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = os.environ.get('DEBUG_SWITCH', 'False').lower() == "True"
-DEBUG = os.environ.get('DEBUG_SWITCH', 'False').lower() == "True"
+DEBUG = False
 
 # Host
 ALLOWED_HOSTS = ["full-web188.onrender.com"]

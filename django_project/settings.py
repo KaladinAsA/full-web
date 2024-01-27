@@ -34,7 +34,7 @@ DEBUG = os.environ.get('DEBUG_SWITCH')
 # Host
 ALLOWED_HOSTS = ["full_web18.onrender.com"]
 
-# Application definition
+# Application definition  "full_web18.onrender.com"
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -94,6 +94,8 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # }
 
 DATABASE_URL = os.environ.get("DATABASE_URL_AUTH")
+
+print(f"DATABASE_URL: {(DATABASE_URL)}")
 
 print(f"Type of DATABASE_URL: {type(DATABASE_URL)}")
 

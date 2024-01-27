@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY_NAME')
 DEBUG = os.environ.get('DEBUG_SWITCH')
 
 # Host
-ALLOWED_HOSTS = ["full_web18.onrender.com"]
+ALLOWED_HOSTS = ["full_web188.onrender.com"]
 
 # Application definition
 

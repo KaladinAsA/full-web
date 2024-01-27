@@ -29,12 +29,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY_NAME')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG_SWITCH', 'False').lower() == "True"
+# DEBUG = os.environ.get('DEBUG_SWITCH', 'False').lower() == "True"
+DEBUG = True
 
 # Host
 ALLOWED_HOSTS = ["full-web188.onrender.com"]
 
-# Application definition
+# Application definition os.environ.get('DEBUG_SWITCH', 'False').lower() == "True"
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -171,7 +172,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR / "media")
 
-if not DEBUG:
+if  DEBUG:
     # Tell Django to copy statics to the `staticfiles` directory
     # in your application directory on Render.
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

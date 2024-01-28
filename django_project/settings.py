@@ -29,8 +29,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY_NAME')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = os.environ.get('DEBUG_SWITCH', 'False').lower() == "True"
-DEBUG = False
+# DEBUG = 
+DEBUG = os.environ.get('DEBUG_SWITCH', 'False').lower() == "True"
 
 # Host
 ALLOWED_HOSTS = ["full-web188.onrender.com"]
@@ -171,12 +171,3 @@ EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD')
 # image
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR / "media")
-
-# if not DEBUG:
-#     # Tell Django to copy statics to the `staticfiles` directory
-#     # in your application directory on Render.
-#     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-#     # Turn on WhiteNoise storage backend that takes care of compressing static files
-#     # and creating unique names for each version so they can safely be cached forever.
-#     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

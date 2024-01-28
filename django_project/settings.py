@@ -170,4 +170,6 @@ EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD')
 
 # image
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR / "media")
+MEDIAFILES_DIRS = [os.path.join(BASE_DIR, 'media')]
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+

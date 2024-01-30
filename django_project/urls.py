@@ -19,7 +19,7 @@ from django.conf.urls.static import static
 
 from django.contrib import admin
 from django.urls import path, include
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +28,6 @@ urlpatterns = [
     path('articles/', include('articles.urls')),
     path('', include('pages.urls')),
      
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
+]
+# Media
 urlpatterns += staticfiles_urlpatterns()

@@ -21,7 +21,7 @@ All images utilized on this platform have been sourced from various free photo s
 
 ![Desktop Screenshot 2024 01 30 - 14 37 20 50](https://github.com/KaladinAsA/full-web/assets/143271029/fbda7801-bcc6-4e4d-9a65-5bd44ea5fdef)
 
-![Desktop Screenshot 2024 01 30 - 14 39 38 82](https://github.com/KaladinAsA/full-web/assets/143271029/a31964e5-a194-4c86-8f15-a1f85a0c9be5)
+![Desktop Screenshot 2024 01 30 - 14 47 00 29](https://github.com/KaladinAsA/full-web/assets/143271029/f97760f6-7ad9-4102-b8d2-36f2c701603e)
 
 
 
